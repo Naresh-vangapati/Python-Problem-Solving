@@ -1,0 +1,27 @@
+n=29
+n1=n
+count=0
+while count==0:
+    n=n+1
+    for i in range (2,n):
+        fact=0
+        if n%i==0:
+            fact+=1
+            break
+    if fact==0:
+        print(n,"is next prime number after",n1)
+        count=1
+#previous prime number
+n=29
+n1=n
+prev=True
+while prev:
+    n=n-1
+    for i in range (2,n):
+        fact=0
+        if n%i==0:
+            fact+=1
+            break
+    if fact==0:
+        print(n,"is previous prime number before",n1)
+        prev=False            
